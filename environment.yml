@@ -1,0 +1,32 @@
+# Create an environment.yml file for the project
+
+environment_yml_content =
+"""\
+name: causality-explorer
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - jupyter
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - pip
+  - pip:
+    - streamlit
+    - dowhy
+    - econml
+    - plotly
+    - shap
+    - pyyaml
+    - tqdm
+"""
+
+# Write to file
+with open("causality-explorer/environment.yml", "w") as file:
+    file.write(environment_yml_content)
+
+"environment.yml file created successfully."
