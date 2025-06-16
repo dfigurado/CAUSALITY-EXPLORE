@@ -23,6 +23,7 @@ dependencies:
     - shap
     - pyyaml
     - tqdm
+    - imbalance-learn
 """
 
 # Write to file
